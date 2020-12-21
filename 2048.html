@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div id="page-game">
+        <div class="button-options">
+            <button onclick="restart()" class="new-game">New Game</button>
+        </div>
+        <div id="game-block" onkeyup="console.log('digitei')" >
+            <div class="row-game">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>        
+            <div class="row-game">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="row-game">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="row-game">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </div>
+        
+        <div class="game-over game-status">
+            <h2>Game Over</h2> <br />
+            <button onclick="restart()" class="new-game">Reiniciar</button>
+        </div>
+    </div> 
+</body>
+</html>

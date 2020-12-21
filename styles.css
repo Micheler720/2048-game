@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+
+}
+#page-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #77EBAB;
+
+}
+.button-options{
+    width: 540px;
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 10px 0;
+}
+.game-status{
+    display: none ;
+
+    height: 540px;
+    width: 540px;
+
+    margin-top: 60px;
+    border-radius: 5px;
+
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+
+    z-index: 999;
+
+    transition: 0.2s;
+
+    animation:  all 2s ease;
+
+    -webkit-box-shadow: inset 0 0 1em #ffffff, 0 0 3em #776e65;
+	-moz-box-shadow:    inset 0 0 1em #ffffff, 0 0 3em #776e65;
+	box-shadow:         inset 0 0 1em #ffffff, 0 0 3em #776e65;
+
+}
+.game-over{
+    background-color: #A4CAA5;
+    opacity: 0.9;
+}
+.game-over h2{
+    font-size: 40px;
+    color: #776e65;
+} 
+.new-game{
+    height: 40px;
+    width: 100px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: green;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-weight: bold;
+}
+.new-game:hover{
+    background-color: rgb(3, 78, 3);
+}
+#game-block{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #A4CAA5;
+    height: 500px;
+    width: 500px;
+    z-index: 9;
+
+    -webkit-box-shadow: inset 0 0 1em #ffffff, 0 0 3em #776e65;
+	-moz-box-shadow:    inset 0 0 1em #ffffff, 0 0 3em #776e65;
+	box-shadow:         inset 0 0 1em #ffffff, 0 0 3em #776e65;
+
+}
+.row-game{
+    display: flex;  
+    justify-content: space-between;  
+}
+.row-game + .row-game{
+    margin-top: 20px;
+}
+.block{
+    background-color: #77EBAB;
+    height: 110px;
+    width: 110px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    transition: all 150ms ease;
+
+    
+}
+.block + .block{
+    margin-right: 2px;
+}
